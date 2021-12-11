@@ -50,9 +50,7 @@ def part1(filename):
                 break
             boards.append(board)
             gc.collect()
-    for draw in range(0, len(drawnumbers), 5):
-        if mark(drawnumbers[draw : draw + 5]):
-            break
+    mark(drawnumbers)
 
 
 if __name__ == "__main__":
